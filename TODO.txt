@@ -1,0 +1,48 @@
+﻿
+----------------------------------------------------------
+New features or gameplay changes
+----------------------------------------------------------
+
+Random objects (points)
+Random Powerups (Player/PlayerComponent.cs)
+	Life
+	Shields
+	Stronger weapon (Time limited)
+
+Overlay points earned on enemy kill
+
+Enemy is destroyed too in player collision
+
+Enemy curved patters (?)
+	Zig-zag downwards (sin on x)
+	Curve (x^2 on y)
+	Tangent (y=tanX)
+	CoTangent (y=cotanX)
+	Curve (x^3 en y)
+
+Boss fight
+
+Deterministic ? (Random seed fixed)
+
+----------------------------------------------------------
+Internal Changes (code cleanup / optimize / ...)
+----------------------------------------------------------
+
+Convert to coroutines
+	Enemy
+	EnemySpawn
+	CameraShake
+	Shield
+	Leaderboard
+
+Recheck code
+	Shield -> Uncouple "parent" logic to another system/component
+	LifeRenderSystem -> Wtf why I delete old numbers and recreate new ones?
+		entity.animate.Animator.SetBool("IsMoving", entity.hasMoveOrder);
+	ScoreRenderSystem -> Wtf why I delete old numbers and recreate new ones?
+		entity.animate.Animator.SetBool("IsMoving", entity.hasMoveOrder);
+	EnergySystem -> Refresh "resource" component? Is better animate the existent one...
+		entity.animate.Animator.SetBool("IsMoving", entity.hasMoveOrder);
+		RenderPositionSystem -> Depends of View in the trigger
+	Energy -> Should be owned by player, not pool
+	ProcessInputSystem -> Move "escape key" logic
