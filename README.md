@@ -1,7 +1,7 @@
 Shmup AAA+
 =================
 
-Source code (without assets or external libs) of [Shmup AAA+](https://judelco.itch.io/shmup-aaa-plus), a game made with Unity and [Entitas](https://github.com/sschmid/Entitas-CSharp) **v0.21.0** for learning purposes.
+Source code (without external libs) of [Shmup AAA+](https://judelco.itch.io/shmup-aaa-plus), a game made with Unity and [Entitas](https://github.com/sschmid/Entitas-CSharp) **v0.21.0** for learning purposes.
 
 - [Itch.io Webpage](https://judelco.itch.io/shmup-aaa-plus)
 - [Play it Online](http://judelco.github.io/unity_builds/ShmupAAAp/) (Unity webplayer)
@@ -30,4 +30,3 @@ Screenshots
 ![Img2](http://i.imgur.com/vZ1d0l4.png)
 ![Img3](http://i.imgur.com/dmMe7OE.png)
 ![Img4](http://i.imgur.com/hCJeWpk.png)
-
